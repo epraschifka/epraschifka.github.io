@@ -1,0 +1,100 @@
+* {
+    font-family: 'Open Sans', 'sans-serif';
+    margin: 0px;
+    color: black;
+}
+
+body {
+    margin-bottom: 50px;
+}
+
+.navbar-li {
+    list-style-type: none;
+    margin: 0px;
+    padding-right: 100px;
+    float: right;
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.navbar-li:hover {
+    opacity: 60%;
+}
+
+#navbar-name:hover {
+    opacity: 100%;
+}
+
+ul {
+    width: 98%;
+    background-color: white;
+    height: 60px;
+    z-index: 100;
+}
+
+#pic-banner {
+    width: 98%;
+    height: 700px;
+}
+
+#head-pic {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.about-me-li {
+    float: middle;
+    list-style-type: none;
+}
+
+.lang {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.project-img {
+    width: 400px;
+    padding-right: 50px;
+}
+
+.project-img:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.project-wrapper {
+    padding-top: 50px;
+}
+
+.project-title {
+    font-size: 30px;
+    font-weight: bold;
+    width: 300px;
+}
+
+.project-title:hover {
+    opacity: 60%;
+}
+
+.project-description {
+    font-size: 20px;
+    width: 400px;
+    padding-top: 20px;
+}
+
+.project-text {
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-brands:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
