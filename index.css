@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Open Sans', 'sans-serif';
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+.topnav {
+    display:flex;
+    position:sticky;
+    top:0;
+    transition:1s;
+    z-index:10;
+}
+
+.topnav > a {
+    padding:3rem;
+    font-size:1.5rem;
+    transition:0.2s;
+    color:black;
+}
+
+.underline {
+    border:solid black 2px;
+    visibility:hidden;
+}
+
+.topnav > a:hover {
+    .underline {
+        visibility: visible;
+        animation-name: elongate;
+        animation-duration:0.8s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes elongate {
+    from {
+        width:0%;
+    }
+
+    to {
+        width:100%;
+    }
+}
+
+.scrolled {
+    background-color:black;
+}
+
+.scrolled a {
+    color:white;
+    border-color:white;
+    padding:1rem;
+}
+
+.scrolled a div {
+    border-color:white;
+}
+
+.welcome-section {
+    display:flex;
+    justify-content: center;
+    animation: slidedown 1s ease-in-out forwards;
+    padding: 12rem 0rem;
+    animation-name: fadein;
+}
+
+#head-pic {
+    max-width: 300px;
+    max-height:300px;
+    border-radius: 50%;
+}
+
+.welcome-section-text {
+    margin: 2rem;
+    max-width: 700px;
+}
+
+.welcome-section-text p:first-child {
+    font-size:5rem;
+}
+
+.welcome-section-text p:last-child {
+    font-size:2rem;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.about-section {
+    padding:8rem 20rem;
+}
+
+.about-header {
+    display:flex;
+    justify-content: center;
+    font-size:4rem;
+    padding:2rem;
+}
+
+.about-text {
+    display:flex;
+    justify-content:center;
+}
+
+
+.about-text > div {
+    flex:1;
+    padding:5rem;
+}
+
+.about-subheader {
+    font-size:2.5rem;
+    margin-top:1rem;
+}
+
+.about-subtext {
+    font-size:1.5rem;
+}
+
+
+.lang {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.project-card {
+    display:flex;
+    padding:2rem;
+    box-shadow: 0px 0px 5px 0.5px black;
+    margin: 2rem 0rem;
+    transition:0.2s;
+}
+
+.project-text {
+    padding: 0rem 5rem;
+    color:black;
+}
+
+.project-text h2 {
+    font-size:2rem;
+}
+
+.project-text p {
+    font-size:1.5rem;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+footer {
+    background-color:whitesmoke;
+    padding:1rem;
+    display:flex;
+    justify-content:center;
+}
+
+footer > * {
+    margin: 0rem 1rem;
+}
+
+.fa-brands:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
